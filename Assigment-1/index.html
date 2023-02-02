@@ -1,0 +1,305 @@
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(6, 315px);
+      grid-template-rows: repeat(11, 90px);
+    }
+
+    .box1 {
+      border: 1px solid black;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      background-color: palegoldenrod;
+    }
+
+    .box2 {
+      display: flex;
+      border: 1px solid black;
+      grid-column-start: 3;
+      grid-column-end: 7;
+      background-color: palegoldenrod;
+    }
+
+    .box3 {
+      border: 1px solid black;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 11;
+      background-color: palegoldenrod;
+    }
+
+    .box4 {
+      border: 1px solid black;
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 6;
+      background-color: palegoldenrod;
+    }
+
+    .box5 {
+      border: 1px solid black;
+      grid-row-start: 2;
+      grid-row-end: 6;
+      grid-column-start: 6;
+      grid-column-end: 7;
+      background-color: palegoldenrod;
+    }
+
+    .box6 {
+      border: 1px solid black;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      background-color: palegoldenrod;
+    }
+
+    .box7 {
+      border: 1px solid black;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      grid-column-start: 4;
+      grid-column-end: 7;
+      background-color: palegoldenrod;
+    }
+
+    .box8 {
+      border: 1px solid black;
+      grid-row-start: 10;
+      grid-row-end: 11;
+      grid-column-start: 3;
+      grid-column-end: 7;
+      background-color: palegoldenrod;
+      display: flex;
+    }
+    
+    .box8 a {
+      margin: 10px;
+      text-align: center;
+    }
+
+    .box8 img {
+      width: 30%;
+      height: auto;
+    }
+
+    #Name {
+      order: 1;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 10px;
+      margin-left: 400px;
+      margin-bottom: 10px;
+    }
+
+    #Number {
+      order: 2;
+      margin-right: auto;
+      font-size: 18px;
+      color: gray;
+    }
+
+    #img1 {
+      max-width: 100%;
+      max-height: 100%;
+      margin-left: 270px;
+    }
+
+    #img2 {
+      order: 3;
+      max-width: 100%;
+      max-height: 100%;
+      margin-right: auto;
+    }
+
+    #CompanyList {
+      font-size: 25px;
+      padding-top: 5%;
+      padding-left: 22%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    li {
+      margin: 20px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      height: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid hsl(359 100% 0%);
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f5f5f5;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    tr:hover {
+      background-color: #fff000;
+    }
+
+    p {
+      padding-left: 1%;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 16px 0;
+    }
+
+    b {
+      font-weight: bold;
+    }
+
+    i {
+      font-style: italic;
+    }
+
+    code {
+      background-color: #f3f3f3;
+      border-radius: 3px;
+      padding: 2px 4px;
+    }
+
+    #img3 {
+      padding-top: 3.5%;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    #heading {
+      padding-left: 19%;
+      font-weight: bold;
+      font-size: xx-large;
+    }
+
+    .box3 p {
+      padding-left: 2%;
+      font-weight: 100;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="box1">
+      <img id="img1" src="dolphin.jpg" alt="Dolphin">
+    </div>
+    <div class="box2">
+      <h1 id="Name">Steven Villarreal</h1>
+      <h2 id="Number">
+        616-324-3333
+        <img id="img2" src="phone.png" alt="Phone">
+      </h2>
+    </div>
+    <div class="box3">
+      <heading id="heading">
+        How I completed my website.
+        <p>
+          I started off first by playing around with some code from class. I really didn't understand the HTML syntax well so I begin to experiment with different tags and elements. I also looked at the slides provided from class but they didn't really help. Most of the stuff I put in this document I came up with was from the W3 website. It had a lot of code that helped with what I was doing. 
+        </p>
+        <p>
+          To start off how I coded this website. I do have to say a bulk of the time was used to create the grid layout. My gosh that was hard. It took me two days to figure it out, but I essentially just measured the screen with a ruler and figured out from there how many rows and columns I would need and how long they would span. It turned out well, so I am happy I got that part somewhat right. 
+        </p>
+        <p>
+          I also could not figure out how to line up the top with my name, address, and the icon. That took a couple of hours but I couldn't get my name to be lined up correctly with the phone number. It got really annoying after almost two hours of trying and failing miserably, but I tried my best to align them. 
+        </p>
+        <p>
+          Everything else was pretty straight forward. Padding had to be checked in multiple grid areas but I liked the way it turned out. This definetly will prepare me for my capstone project since it is mostly webbased. 
+        </p>
+        <p>
+          I do have to mention that about 3/4's through I stopped giving tags ID's and started to associate them with the class since it was easier to do. For instance, box8 had 'a' and an 'img'. Typing .box8 a and .box8 img instead of what I had mention in CSS made things a lot cleaner in my opinion. Glad I picked that up and will more than likely use that for future projects. 
+        </p>
+      </heading>
+    </div>
+    <div class="box4">
+      <table>
+        <tr>
+          <th>Course Number</th>
+          <th>Course Name</th>
+          <th>Semester Taken</th>
+        </tr>
+        <tr>
+          <td>CIS 350</td>
+          <td>Software Engineering</td>
+          <td>Winter 2020</td>
+        </tr>
+        <tr>
+          <td>CIS 368</td>
+          <td>Usability Design and Evaluation</td>
+          <td>Fall 2022</td>
+        </tr>
+        <tr>
+          <td>MUS 120</td>
+          <td>Music Fundamentals</td>
+          <td>Fall 2018</td>
+        </tr>
+        <tr>
+          <td>FIT 120</td>
+          <td>Golf Fundamentals 1</td>
+          <td>Fall 2021</td>
+        </tr>
+      </table>
+    </div>
+    <div class="box5">
+      <img id="img3" src="CaptainRex.jpg" alt="Phone">
+    </div>
+    <div class="box6">
+      <ul id="CompanyList">
+        <li><a href="https://helix-int.com/">Helix International</a></li>
+        <li><a href="https://www.spacex.com/">SpaceX</a></li>
+        <li><a href="https://www.neogen.com/">Neogen</a></li>
+        <li><a href="https://www.bestbuy.com/">BestBuy</a></li>
+      </ul>
+    </div>
+    <div class="box7">
+      <body>
+        <p>When I was 17 I was diagnosed with a rare type of Brain Cancer called a <b>Pilomyxoid Astrocytoma</b>. It was
+          a type of cancer that is <i>inoperable</i> and something that I more than likely have to live with forever
+          until a cure comes around.
+          This cancer is bad but not at the same time. Cancers are graded on a scale of I-IV with IV (4) being the worst
+          with a grim diagnosis. My cancer is considered to be a <b>Grade II</b> type of tumor so the outcome is likely
+          in my favor.
+        </p>
+        <p>However this does not mean that I am safe from it impacting me in a negative way. This cancer can cause a
+          plethora of issues include, permanent vision loss, strabismus <i>(Lazy Eye)</i>, and other issues depending on
+          where it is located in
+          the brain. All of which I currently have.
+        </p>
+        <p>It sucks having to live with this disease and all I can do is hope that there will be a cure one day. People
+          have been cured by this type of cancer using <b>Chemotherapy</b> but it is rare and more research is needed
+          for a viable and sustainable
+          cure to make this cancer go away for ever.
+        </p>
+        <p>
+          <code>// I didn't have space for code but at least a comment would work since this type of comment is code based in C#.</code>
+        </p>
+      </body>
+    </div>
+    <div class="box8">
+      <a href="https://twitter.com/"><img src="TwitterLogo.png" alt="Twitter"></a>
+      <a href="https://www.facebook.com/"><img src="FacebookLogo.png" alt="Facebook"></a>
+      <a href="https://github.com/"><img src="GitHubLogo.png" alt="GitHub"></a>
+      <a href="https://www.meijer.com/"><img src="MeijerLogo.png" alt="Meijer"></a>
+      <a href="https://www.amazon.com/"><img src="AmazonLogo.jpg" alt="Amazon"></a>
+    </div>
+  </div>
+</body>
